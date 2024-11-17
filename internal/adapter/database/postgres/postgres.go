@@ -14,7 +14,7 @@ type Postgres struct {
 }
 
 func New(config config.PostgresConfig) (*gorm.DB, error) {
-	dsn := fmt.Sprintf("host=%s user=%s passowrd=%s dbname=%s port=%s",
+	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s",
 		config.PostgresHost,
 		config.DatabaseUser,
 		config.DatabasePassword,
